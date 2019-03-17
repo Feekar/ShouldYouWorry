@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <title>Worried?</title>
+</head>
+<body>
+    <div class="question-container">
+            <span class="question">Do you have a problem in your life?</span>
+            <div>
+                <button data-travel="mid">
+                    Yes    
+                    <svg height="100" width="110">
+                        <ellipse stroke-linecap="round" cx="52" cy="50" stroke="#444" stroke-width="3" fill="none" ry="45" rx="50"></ellipse>
+                    </svg> 
+                </button>
+                <button data-travel="end">
+                    No    
+                    <svg height="100" width="110">
+                        <ellipse stroke-linecap="round" cx="52" cy="50" stroke="#444" stroke-width="3" fill="none" ry="45" rx="50"></ellipse>
+                    </svg> 
+                </button>
+            </div>
+    </div>
+
+    <div class="question-container" id="mid">
+        <span class="question">Can you do something about it?</span>
+        <div>
+            <button data-travel="end">
+                Yes    
+                <svg height="100" width="110">
+                    <ellipse stroke-linecap="round" cx="52" cy="50" stroke="#444" stroke-width="3" fill="none" ry="45" rx="50"></ellipse>
+                </svg> 
+            </button>
+            <button data-travel="end">
+                No    
+                <svg height="100" width="110">
+                    <ellipse stroke-linecap="round" cx="52" cy="50" stroke="#444" stroke-width="3" fill="none" ry="45" rx="50"></ellipse>
+                </svg> 
+            </button>
+        </div>
+    </div>
+
+    <div class="question-container" id="end">
+        <span class="question">Then why worry?</span>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

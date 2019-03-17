@@ -1,0 +1,93 @@
+html {
+    font-family: 'Amatic SC', cursive;
+}
+
+body {
+    width: 100vw;
+    height: 300vh;
+    margin: 0;
+    background: linear-gradient(#e8d9e6, #fff8f9);
+    color: 555;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow:hidden;
+}
+
+body.scrollable{
+    overflow-y:auto;
+}
+
+.question-container {
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.question-container>div {
+    display: flex;
+    justify-content: space-around;
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.question-container:last-of-type > .question{
+    font-size:5rem;
+}
+
+.question-container:first-of-type{
+    opacity:0;
+    transition:2.5s;
+}
+
+span.question {
+    font-size: 4rem;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 3.5rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+}
+
+svg {
+    stroke-dasharray: 309;
+    stroke-dashoffset: 310;
+    position: absolute;
+    animation-delay: 0.2s;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    transform: rotate(-5deg);
+}
+
+button:focus {
+    outline: none;
+    border: none;
+}
+
+button:hover>svg {
+    animation: draw 0.3s linear forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
